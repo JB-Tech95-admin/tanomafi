@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVert - Protégeons notre planète</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-leaf"></i>
+          <span>EcoVert</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li><a href="#actions" class="nav-link">Actions</a></li>
+          <li><a href="#galerie" class="nav-link">Galerie</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Protégeons Notre Planète</h1>
+        <p class="hero-subtitle">
+          Ensemble pour un avenir durable et respectueux de l'environnement
+        </p>
+        <button class="cta-button" id="cta-button">
+          <i class="fas fa-seedling"></i>
+          Agir Maintenant
+        </button>
+      </div>
+      <div class="hero-animation">
+        <div class="floating-elements">
+          <div class="leaf leaf-1"><i class="fas fa-leaf"></i></div>
+          <div class="leaf leaf-2"><i class="fas fa-leaf"></i></div>
+          <div class="leaf leaf-3"><i class="fas fa-leaf"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions Section -->
+    <section id="actions" class="actions">
+      <div class="container">
+        <h2 class="section-title">Nos Actions</h2>
+        <div class="actions-grid">
+          <div class="action-card" data-aos="fade-up">
+            <div class="card-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Recyclage</h3>
+            <p>
+              Promotion du recyclage et de la réduction des déchets pour un
+              monde plus propre.
+            </p>
+            <div class="card-progress">
+              <div class="progress-bar" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="action-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">
+              <i class="fas fa-solar-panel"></i>
+            </div>
+            <h3>Énergie Verte</h3>
+            <p>
+              Développement des énergies renouvelables pour réduire notre
+              empreinte carbone.
+            </p>
+            <div class="card-progress">
+              <div class="progress-bar" data-progress="72"></div>
+            </div>
+          </div>
+          <div class="action-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h3>Reforestation</h3>
+            <p>
+              Plantation d'arbres et protection des forêts pour préserver la
+              biodiversité.
+            </p>
+            <div class="card-progress">
+              <div class="progress-bar" data-progress="93"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie Interactive -->
+    <section id="galerie" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Galerie Environnementale</h2>
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Tout</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="energie">Énergie</button>
+          <button class="filter-btn" data-filter="recyclage">Recyclage</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <div class="gallery-item" data-category="nature">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop"
+                alt="Forêt"
+              />
+              <div class="gallery-overlay">
+                <h4>Forêt Préservée</h4>
+                <p>Protection de la biodiversité</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="energie">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop"
+                alt="Éoliennes"
+              />
+              <div class="gallery-overlay">
+                <h4>Énergie Éolienne</h4>
+                <p>Énergie propre et renouvelable</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="recyclage">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=300&fit=crop"
+                alt="Recyclage"
+              />
+              <div class="gallery-overlay">
+                <h4>Centre de Recyclage</h4>
+                <p>Gestion durable des déchets</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+                alt="Montagne"
+              />
+              <div class="gallery-overlay">
+                <h4>Paysages Naturels</h4>
+                <p>Beauté de la nature préservée</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="energie">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop"
+                alt="Panneaux solaires"
+              />
+              <div class="gallery-overlay">
+                <h4>Énergie Solaire</h4>
+                <p>Technologie verte innovante</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <div class="gallery-image">
+              <img
+                src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=400&h=300&fit=crop"
+                alt="Océan"
+              />
+              <div class="gallery-overlay">
+                <h4>Océans Propres</h4>
+                <p>Protection des écosystèmes marins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Counter -->
+    <section id="impact" class="impact">
+      <div class="container">
+        <h2 class="section-title">Notre Impact</h2>
+        <div class="impact-stats">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <div class="stat-number" data-target="15000">0</div>
+            <div class="stat-label">Arbres Plantés</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <div class="stat-number" data-target="2500">0</div>
+            <div class="stat-label">Tonnes Recyclées</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="stat-number" data-target="850">0</div>
+            <div class="stat-label">MW Énergie Verte</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Personnes Sensibilisées</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contactez-nous</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Rejoignez le mouvement</h3>
+            <p>
+              Ensemble, nous pouvons faire la différence pour notre planète.
+            </p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>contact@ecovert.fr</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+33 1 23 45 67 89</span>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Votre message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fas fa-leaf"></i>
+            <span>EcoVert</span>
+          </div>
+          <p>
+            &copy; 2024 EcoVert. Tous droits réservés. Protégeons notre planète
+            ensemble.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
