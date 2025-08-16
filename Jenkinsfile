@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Herilanto003/site-vitrine-environnement.git'
+                git branch: 'main', url: 'https://github.com/JB-Tech95-admin/tanomafi.git'
             }
         }
         
@@ -23,14 +23,14 @@ pipeline {
         stage('Docker Build') {
             steps {
                 echo 'Building Docker image...'
-                sh 'docker build -t my-site:latest .'
+                sh 'docker build -t tanomafi:latest .'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Simulating deployment...'
-                sh 'docker run -d -p 80:80 --name my-site my-site'
+                sh 'docker run -d -p 3000:80 --name tanomafi tanomafi'
                 sh 'echo Deploy done'
             }
         }
